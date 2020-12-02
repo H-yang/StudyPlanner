@@ -1,25 +1,29 @@
 # StudyPlanner
 
-- Visual studio code with python virtual environment 
-1) Create virtual environment: python3 -m venv .venv 
+- Visual studio code with python virtual environment
+- (py/python/python3 this depends on your environment variable settings) \
+1) Create virtual environment: $ py -m venv .venv 
 2) Activate virtual environment: .venv\Scripts\Activate.ps1 or select in visual studio code 
 3) You should see (.venv) in the command line 
 
 Packages needed (pip install / py -m pipinstall) \
 Install all the necessary packages you see from the console error 
 
-(Windows 10) To run back-end \
-$env:FLASK_APP="app.py"  \
-$env:FLASK_ENV="development"\
-py -m flask run 
+(Windows 10) \
+Back-end - run the following commands in the folder where app.py is \
+These optional commands allow you the reload flask automatically (without ^C and start again) \ 
+- (Optional. copy the $ sign as well) $env:FLASK_APP="app.py"  
+- (Optional. copy the $ sign as well) $env:FLASK_ENV="development" 
+- $ py -m flask run 
 
 (Linux) \
-export FLASK_DEBUG=1 \
-py/python -m flask run
+- (Optional. flask will reload automatically) $ export FLASK_DEBUG=1 
+- $ py -m flask run
 
-To run front-end \
-go to planner-app folder and open the terminal from here
-npm start 
+Front-end \
+Go to planner-app folder and open the terminal from here \
+If it's first time running, run: $ npm install \
+To start service: $ npm start 
 
 Languages used:
 - Python 3+
