@@ -36,3 +36,4 @@ Frameworks:
 DB:
 - MongoDB + mongoengine
 
+Note- this repository was initially created in my other github repository (https://github.com/yhsuan90/StudyPlanner)
